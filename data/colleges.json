@@ -1,0 +1,1255 @@
+[
+  {
+    "name": "Indian Institute of Technology Delhi",
+    "state": "Delhi",
+    "type": "IIT",
+    "nirfRanking": 1,
+    "fees": 200000,
+    "placement": {
+      "averagePackage": 1500000,
+      "highestPackage": 12000000
+    },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 3200, "obc": 5800, "sc": 1200, "st": 800 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 5200, "obc": 8500, "sc": 2200, "st": 1400 },
+        "seats": { "general": 25, "obc": 17, "sc": 7, "st": 3 }
+      },
+      {
+        "name": "Mechanical Engineering",
+        "cutoff": { "general": 8500, "obc": 12000, "sc": 3500, "st": 1800 },
+        "seats": { "general": 25, "obc": 17, "sc": 7, "st": 3 }
+      }
+    ]
+  },
+  {
+    "name": "Indian Institute of Technology Bombay",
+    "state": "Maharashtra",
+    "type": "IIT",
+    "nirfRanking": 2,
+    "fees": 200000,
+    "placement": { "averagePackage": 1450000, "highestPackage": 11500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 3500, "obc": 6200, "sc": 1400, "st": 900 },
+        "seats": { "general": 35, "obc": 23, "sc": 9, "st": 5 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 4800, "obc": 8000, "sc": 1800, "st": 1100 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      }
+    ]
+  },
+  {
+    "name": "Indian Institute of Technology Madras",
+    "state": "Tamil Nadu",
+    "type": "IIT",
+    "nirfRanking": 3,
+    "fees": 200000,
+    "placement": { "averagePackage": 1400000, "highestPackage": 11000000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 3800, "obc": 6500, "sc": 1600, "st": 1000 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      },
+      {
+        "name": "Mechanical Engineering",
+        "cutoff": { "general": 9000, "obc": 12500, "sc": 3700, "st": 1800 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      }
+    ]
+  },
+  {
+    "name": "Indian Institute of Technology Kanpur",
+    "state": "Uttar Pradesh",
+    "type": "IIT",
+    "nirfRanking": 4,
+    "fees": 200000,
+    "placement": { "averagePackage": 1350000, "highestPackage": 10500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 4100, "obc": 6800, "sc": 1800, "st": 1100 },
+        "seats": { "general": 28, "obc": 18, "sc": 7, "st": 4 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 6500, "obc": 9500, "sc": 2800, "st": 1400 },
+        "seats": { "general": 28, "obc": 18, "sc": 7, "st": 4 }
+      }
+    ]
+  },
+  {
+    "name": "Indian Institute of Technology Kharagpur",
+    "state": "West Bengal",
+    "type": "IIT",
+    "nirfRanking": 5,
+    "fees": 200000,
+    "placement": { "averagePackage": 1300000, "highestPackage": 10000000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 4400, "obc": 7200, "sc": 2000, "st": 1200 },
+        "seats": { "general": 32, "obc": 21, "sc": 8, "st": 4 }
+      },
+      {
+        "name": "Mechanical Engineering",
+        "cutoff": { "general": 9500, "obc": 13000, "sc": 3800, "st": 1900 },
+        "seats": { "general": 32, "obc": 21, "sc": 8, "st": 4 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Warangal",
+    "state": "Telangana",
+    "type": "NIT",
+    "nirfRanking": 19,
+    "fees": 135000,
+    "placement": { "averagePackage": 850000, "highestPackage": 4800000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 5800, "obc": 8200, "sc": 2400, "st": 1200 },
+        "seats": { "general": 45, "obc": 30, "sc": 12, "st": 6 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 8200, "obc": 11500, "sc": 3500, "st": 1800 },
+        "seats": { "general": 45, "obc": 30, "sc": 12, "st": 6 }
+      },
+      {
+        "name": "Mechanical Engineering",
+        "cutoff": { "general": 22000, "obc": 28000, "sc": 8500, "st": 4200 },
+        "seats": { "general": 45, "obc": 30, "sc": 12, "st": 6 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Rourkela",
+    "state": "Odisha",
+    "type": "NIT",
+    "nirfRanking": 20,
+    "fees": 130000,
+    "placement": { "averagePackage": 820000, "highestPackage": 4500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 6200, "obc": 8800, "sc": 2600, "st": 1300 },
+        "seats": { "general": 50, "obc": 33, "sc": 13, "st": 7 }
+      },
+      {
+        "name": "Mechanical Engineering",
+        "cutoff": { "general": 24000, "obc": 30000, "sc": 9000, "st": 4500 },
+        "seats": { "general": 50, "obc": 33, "sc": 13, "st": 7 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Karnataka",
+    "state": "Karnataka",
+    "type": "NIT",
+    "nirfRanking": 21,
+    "fees": 140000,
+    "placement": { "averagePackage": 900000, "highestPackage": 5200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 6500, "obc": 9500, "sc": 2800, "st": 1400 },
+        "seats": { "general": 40, "obc": 25, "sc": 10, "st": 5 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 9500, "obc": 13000, "sc": 3800, "st": 1900 },
+        "seats": { "general": 40, "obc": 25, "sc": 10, "st": 5 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 8000, "obc": 11500, "sc": 3200, "st": 1600 },
+        "seats": { "general": 40, "obc": 25, "sc": 10, "st": 5 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Delhi",
+    "state": "Delhi",
+    "type": "NIT",
+    "nirfRanking": 32,
+    "fees": 150000,
+    "placement": { "averagePackage": 800000, "highestPackage": 4500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 8500, "obc": 12000, "sc": 3500, "st": 1800 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 12000, "obc": 16000, "sc": 4500, "st": 2200 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 10000, "obc": 14000, "sc": 4000, "st": 2000 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Surat",
+    "state": "Gujarat",
+    "type": "NIT",
+    "nirfRanking": 33,
+    "fees": 125000,
+    "placement": { "averagePackage": 750000, "highestPackage": 4000000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 9200, "obc": 13000, "sc": 3800, "st": 1900 },
+        "seats": { "general": 35, "obc": 23, "sc": 9, "st": 5 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 11000, "obc": 15000, "sc": 4500, "st": 2200 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Trichy",
+    "state": "Tamil Nadu",
+    "type": "NIT",
+    "nirfRanking": 34,
+    "fees": 135000,
+    "placement": { "averagePackage": 880000, "highestPackage": 5100000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 7500, "obc": 10800, "sc": 3100, "st": 1550 },
+        "seats": { "general": 40, "obc": 26, "sc": 10, "st": 5 }
+      },
+      {
+        "name": "Mechanical Engineering",
+        "cutoff": { "general": 20000, "obc": 26000, "sc": 7800, "st": 3900 },
+        "seats": { "general": 40, "obc": 26, "sc": 10, "st": 5 }
+      }
+    ]
+  },
+  {
+    "name": "Visvesvaraya National Institute of Technology",
+    "state": "Karnataka",
+    "type": "NIT",
+    "nirfRanking": 35,
+    "fees": 130000,
+    "placement": { "averagePackage": 780000, "highestPackage": 4300000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 8800, "obc": 12500, "sc": 3600, "st": 1800 },
+        "seats": { "general": 36, "obc": 24, "sc": 9, "st": 5 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 11500, "obc": 15500, "sc": 4500, "st": 2200 },
+        "seats": { "general": 36, "obc": 24, "sc": 9, "st": 5 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Allahabad",
+    "state": "Uttar Pradesh",
+    "type": "NIT",
+    "nirfRanking": 36,
+    "fees": 135000,
+    "placement": { "averagePackage": 750000, "highestPackage": 4200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 9500, "obc": 13500, "sc": 4000, "st": 2000 },
+        "seats": { "general": 45, "obc": 30, "sc": 12, "st": 6 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Patna",
+    "state": "Bihar",
+    "type": "NIT",
+    "nirfRanking": 37,
+    "fees": 125000,
+    "placement": { "averagePackage": 650000, "highestPackage": 3800000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 12000, "obc": 16500, "sc": 4800, "st": 2400 },
+        "seats": { "general": 40, "obc": 26, "sc": 10, "st": 5 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Hamirpur",
+    "state": "Himachal Pradesh",
+    "type": "NIT",
+    "nirfRanking": 38,
+    "fees": 120000,
+    "placement": { "averagePackage": 600000, "highestPackage": 3500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 13500, "obc": 18000, "sc": 5200, "st": 2600 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Technology Jalandhar",
+    "state": "Punjab",
+    "type": "NIT",
+    "nirfRanking": 39,
+    "fees": 130000,
+    "placement": { "averagePackage": 700000, "highestPackage": 4100000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 11000, "obc": 15000, "sc": 4400, "st": 2200 },
+        "seats": { "general": 35, "obc": 23, "sc": 9, "st": 5 }
+      }
+    ]
+  },
+  {
+    "name": "Indian Institute of Information Technology Allahabad",
+    "state": "Uttar Pradesh",
+    "type": "IIIT",
+    "nirfRanking": 89,
+    "fees": 220000,
+    "placement": { "averagePackage": 750000, "highestPackage": 3800000 },
+    "branches": [
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 18000, "obc": 24000, "sc": 7000, "st": 3500 },
+        "seats": { "general": 60, "obc": 40, "sc": 15, "st": 8 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 22000, "obc": 28000, "sc": 8500, "st": 4200 },
+        "seats": { "general": 40, "obc": 26, "sc": 10, "st": 5 }
+      }
+    ]
+  },
+  {
+    "name": "Indian Institute of Information Technology Hyderabad",
+    "state": "Telangana",
+    "type": "IIIT",
+    "nirfRanking": 90,
+    "fees": 215000,
+    "placement": { "averagePackage": 720000, "highestPackage": 3600000 },
+    "branches": [
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 19500, "obc": 26000, "sc": 7500, "st": 3700 },
+        "seats": { "general": 50, "obc": 33, "sc": 13, "st": 7 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 24000, "obc": 31000, "sc": 9500, "st": 4700 },
+        "seats": { "general": 30, "obc": 20, "sc": 8, "st": 4 }
+      }
+    ]
+  },
+  {
+    "name": "Bits Pilani",
+    "state": "Rajasthan",
+    "type": "Private",
+    "nirfRanking": 45,
+    "fees": 2200000,
+    "placement": { "averagePackage": 1200000, "highestPackage": 8500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 30000, "obc": 35000, "sc": 12000, "st": 6000 },
+        "seats": { "general": 80, "obc": 50, "sc": 20, "st": 10 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 35000, "obc": 40000, "sc": 14000, "st": 7000 },
+        "seats": { "general": 70, "obc": 45, "sc": 18, "st": 9 }
+      }
+    ]
+  },
+  {
+    "name": "Manipal Institute of Technology",
+    "state": "Karnataka",
+    "type": "Private",
+    "nirfRanking": 46,
+    "fees": 1600000,
+    "placement": { "averagePackage": 900000, "highestPackage": 6200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 40000, "obc": 45000, "sc": 16000, "st": 8000 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 42000, "obc": 47000, "sc": 17000, "st": 8500 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "Vellore Institute of Technology",
+    "state": "Tamil Nadu",
+    "type": "Private",
+    "nirfRanking": 47,
+    "fees": 1400000,
+    "placement": { "averagePackage": 850000, "highestPackage": 5800000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 42000, "obc": 48000, "sc": 17000, "st": 8500 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 45000, "obc": 51000, "sc": 18000, "st": 9000 },
+        "seats": { "general": 90, "obc": 60, "sc": 22, "st": 11 }
+      }
+    ]
+  },
+  {
+    "name": "Delhi Technological University",
+    "state": "Delhi",
+    "type": "Government",
+    "nirfRanking": 48,
+    "fees": 80000,
+    "placement": { "averagePackage": 650000, "highestPackage": 3800000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 15000, "obc": 20000, "sc": 5800, "st": 2900 },
+        "seats": { "general": 60, "obc": 40, "sc": 15, "st": 8 }
+      }
+    ]
+  },
+  {
+    "name": "Jamia Millia Islamia",
+    "state": "Delhi",
+    "type": "Government",
+    "nirfRanking": 50,
+    "fees": 75000,
+    "placement": { "averagePackage": 550000, "highestPackage": 3200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 25000, "obc": 32000, "sc": 9000, "st": 4500 },
+        "seats": { "general": 50, "obc": 33, "sc": 13, "st": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Anna University",
+    "state": "Tamil Nadu",
+    "type": "Government",
+    "nirfRanking": 51,
+    "fees": 70000,
+    "placement": { "averagePackage": 500000, "highestPackage": 3000000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 28000, "obc": 35000, "sc": 10000, "st": 5000 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "SRM Institute of Science and Technology",
+    "state": "Tamil Nadu",
+    "type": "Private",
+    "nirfRanking": 52,
+    "fees": 1300000,
+    "placement": { "averagePackage": 800000, "highestPackage": 5200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 50000, "obc": 56000, "sc": 18000, "st": 9000 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 55000, "obc": 61000, "sc": 19500, "st": 9750 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "Symbiosis Institute of Technology",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 53,
+    "fees": 1450000,
+    "placement": { "averagePackage": 850000, "highestPackage": 5500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 48000, "obc": 54000, "sc": 17000, "st": 8500 },
+        "seats": { "general": 90, "obc": 60, "sc": 22, "st": 11 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 46000, "obc": 52000, "sc": 16500, "st": 8250 },
+        "seats": { "general": 80, "obc": 53, "sc": 20, "st": 10 }
+      }
+    ]
+  },
+  {
+    "name": "Lovely Professional University",
+    "state": "Punjab",
+    "type": "Private",
+    "nirfRanking": 54,
+    "fees": 1100000,
+    "placement": { "averagePackage": 750000, "highestPackage": 4800000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 55000, "obc": 61000, "sc": 19500, "st": 9750 },
+        "seats": { "general": 150, "obc": 100, "sc": 40, "st": 20 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 57000, "obc": 63000, "sc": 20100, "st": 10050 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      }
+    ]
+  },
+  {
+    "name": "Amrita Vishwa Vidyapeetham",
+    "state": "Kerala",
+    "type": "Private",
+    "nirfRanking": 55,
+    "fees": 1250000,
+    "placement": { "averagePackage": 820000, "highestPackage": 5400000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 52000, "obc": 58000, "sc": 18500, "st": 9250 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 58000, "obc": 64000, "sc": 20400, "st": 10200 },
+        "seats": { "general": 80, "obc": 53, "sc": 20, "st": 10 }
+      }
+    ]
+  },
+  {
+    "name": "PSG College of Technology",
+    "state": "Tamil Nadu",
+    "type": "Private",
+    "nirfRanking": 56,
+    "fees": 1200000,
+    "placement": { "averagePackage": 890000, "highestPackage": 6100000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 45000, "obc": 51000, "sc": 16500, "st": 8250 },
+        "seats": { "general": 110, "obc": 73, "sc": 28, "st": 14 }
+      },
+      {
+        "name": "Mechanical Engineering",
+        "cutoff": { "general": 52000, "obc": 58000, "sc": 18500, "st": 9250 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "RV College of Engineering",
+    "state": "Karnataka",
+    "type": "Private",
+    "nirfRanking": 57,
+    "fees": 1150000,
+    "placement": { "averagePackage": 800000, "highestPackage": 5300000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 50000, "obc": 56000, "sc": 18000, "st": 9000 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 52000, "obc": 58000, "sc": 18500, "st": 9250 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "BMS College of Engineering",
+    "state": "Karnataka",
+    "type": "Private",
+    "nirfRanking": 58,
+    "fees": 1100000,
+    "placement": { "averagePackage": 780000, "highestPackage": 5100000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 51000, "obc": 57000, "sc": 18250, "st": 9125 },
+        "seats": { "general": 110, "obc": 73, "sc": 28, "st": 14 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 54000, "obc": 60000, "sc": 19200, "st": 9600 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "MS Ramaiah Institute of Technology",
+    "state": "Karnataka",
+    "type": "Private",
+    "nirfRanking": 59,
+    "fees": 1050000,
+    "placement": { "averagePackage": 750000, "highestPackage": 4900000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 52000, "obc": 58000, "sc": 18500, "st": 9250 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "Dayananda Sagar Academy of Technology",
+    "state": "Karnataka",
+    "type": "Private",
+    "nirfRanking": 60,
+    "fees": 1000000,
+    "placement": { "averagePackage": 720000, "highestPackage": 4700000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 53000, "obc": 59000, "sc": 18800, "st": 9400 },
+        "seats": { "general": 95, "obc": 63, "sc": 24, "st": 12 }
+      }
+    ]
+  },
+  {
+    "name": "CMR College of Engineering",
+    "state": "Telangana",
+    "type": "Private",
+    "nirfRanking": 61,
+    "fees": 950000,
+    "placement": { "averagePackage": 700000, "highestPackage": 4500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 54000, "obc": 60000, "sc": 19200, "st": 9600 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      }
+    ]
+  },
+  {
+    "name": "Vignan's Foundation for Science Technology and Research",
+    "state": "Andhra Pradesh",
+    "type": "Private",
+    "nirfRanking": 62,
+    "fees": 900000,
+    "placement": { "averagePackage": 680000, "highestPackage": 4300000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 55000, "obc": 61000, "sc": 19500, "st": 9750 },
+        "seats": { "general": 130, "obc": 86, "sc": 33, "st": 17 }
+      }
+    ]
+  },
+  {
+    "name": "Koneru Lakshmaiah Education Foundation",
+    "state": "Andhra Pradesh",
+    "type": "Private",
+    "nirfRanking": 63,
+    "fees": 850000,
+    "placement": { "averagePackage": 650000, "highestPackage": 4100000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 56000, "obc": 62000, "sc": 19800, "st": 9900 },
+        "seats": { "general": 125, "obc": 83, "sc": 31, "st": 16 }
+      }
+    ]
+  },
+  {
+    "name": "Sathyabama Institute of Science and Technology",
+    "state": "Tamil Nadu",
+    "type": "Private",
+    "nirfRanking": 64,
+    "fees": 900000,
+    "placement": { "averagePackage": 670000, "highestPackage": 4200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 54000, "obc": 60000, "sc": 19200, "st": 9600 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      }
+    ]
+  },
+  {
+    "name": "K L University",
+    "state": "Andhra Pradesh",
+    "type": "Private",
+    "nirfRanking": 65,
+    "fees": 800000,
+    "placement": { "averagePackage": 620000, "highestPackage": 3900000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 57000, "obc": 63000, "sc": 20100, "st": 10050 },
+        "seats": { "general": 140, "obc": 93, "sc": 35, "st": 18 }
+      }
+    ]
+  },
+  {
+    "name": "Thapar Institute of Engineering and Technology",
+    "state": "Punjab",
+    "type": "Private",
+    "nirfRanking": 66,
+    "fees": 1200000,
+    "placement": { "averagePackage": 880000, "highestPackage": 5600000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 46000, "obc": 52000, "sc": 16500, "st": 8250 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      },
+      {
+        "name": "Electronics and Communication Engineering",
+        "cutoff": { "general": 50000, "obc": 56000, "sc": 18000, "st": 9000 },
+        "seats": { "general": 90, "obc": 60, "sc": 22, "st": 11 }
+      }
+    ]
+  },
+  {
+    "name": "KIIT University",
+    "state": "Odisha",
+    "type": "Private",
+    "nirfRanking": 67,
+    "fees": 900000,
+    "placement": { "averagePackage": 700000, "highestPackage": 4400000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 55000, "obc": 61000, "sc": 19500, "st": 9750 },
+        "seats": { "general": 150, "obc": 100, "sc": 40, "st": 20 }
+      }
+    ]
+  },
+  {
+    "name": "Siksha O Anusandhan University",
+    "state": "Odisha",
+    "type": "Private",
+    "nirfRanking": 68,
+    "fees": 850000,
+    "placement": { "averagePackage": 680000, "highestPackage": 4200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 56000, "obc": 62000, "sc": 19800, "st": 9900 },
+        "seats": { "general": 140, "obc": 93, "sc": 35, "st": 18 }
+      }
+    ]
+  },
+  {
+    "name": "Nirma University",
+    "state": "Gujarat",
+    "type": "Private",
+    "nirfRanking": 69,
+    "fees": 1100000,
+    "placement": { "averagePackage": 820000, "highestPackage": 5300000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 50000, "obc": 56000, "sc": 18000, "st": 9000 },
+        "seats": { "general": 110, "obc": 73, "sc": 28, "st": 14 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 52000, "obc": 58000, "sc": 18500, "st": 9250 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "Sharda University",
+    "state": "Uttar Pradesh",
+    "type": "Private",
+    "nirfRanking": 70,
+    "fees": 950000,
+    "placement": { "averagePackage": 700000, "highestPackage": 4300000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 58000, "obc": 64000, "sc": 20400, "st": 10200 },
+        "seats": { "general": 130, "obc": 86, "sc": 33, "st": 17 }
+      }
+    ]
+  },
+  {
+    "name": "Amity University",
+    "state": "Uttar Pradesh",
+    "type": "Private",
+    "nirfRanking": 71,
+    "fees": 1000000,
+    "placement": { "averagePackage": 750000, "highestPackage": 4700000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 60000, "obc": 66000, "sc": 21000, "st": 10500 },
+        "seats": { "general": 150, "obc": 100, "sc": 40, "st": 20 }
+      }
+    ]
+  },
+  {
+    "name": "Chandigarh University",
+    "state": "Punjab",
+    "type": "Private",
+    "nirfRanking": 72,
+    "fees": 1050000,
+    "placement": { "averagePackage": 780000, "highestPackage": 4900000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 54000, "obc": 60000, "sc": 19200, "st": 9600 },
+        "seats": { "general": 140, "obc": 93, "sc": 35, "st": 18 }
+      },
+      {
+        "name": "Information Technology",
+        "cutoff": { "general": 56000, "obc": 62000, "sc": 19800, "st": 9900 },
+        "seats": { "general": 130, "obc": 86, "sc": 33, "st": 17 }
+      }
+    ]
+  },
+  {
+    "name": "The LNM Institute of Information Technology",
+    "state": "Rajasthan",
+    "type": "Private",
+    "nirfRanking": 73,
+    "fees": 900000,
+    "placement": { "averagePackage": 720000, "highestPackage": 4600000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 52000, "obc": 58000, "sc": 18500, "st": 9250 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "JECRC University",
+    "state": "Rajasthan",
+    "type": "Private",
+    "nirfRanking": 74,
+    "fees": 850000,
+    "placement": { "averagePackage": 680000, "highestPackage": 4300000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 55000, "obc": 61000, "sc": 19500, "st": 9750 },
+        "seats": { "general": 110, "obc": 73, "sc": 28, "st": 14 }
+      }
+    ]
+  },
+  {
+    "name": "Poornima University",
+    "state": "Rajasthan",
+    "type": "Private",
+    "nirfRanking": 75,
+    "fees": 800000,
+    "placement": { "averagePackage": 650000, "highestPackage": 4100000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 57000, "obc": 63000, "sc": 20100, "st": 10050 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      }
+    ]
+  },
+  {
+    "name": "KIET Group of Institutions",
+    "state": "Uttar Pradesh",
+    "type": "Private",
+    "nirfRanking": 76,
+    "fees": 900000,
+    "placement": { "averagePackage": 700000, "highestPackage": 4400000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 54000, "obc": 60000, "sc": 19200, "st": 9600 },
+        "seats": { "general": 130, "obc": 86, "sc": 33, "st": 17 }
+      }
+    ]
+  },
+  {
+    "name": "Arya College of Engineering and IT",
+    "state": "Rajasthan",
+    "type": "Private",
+    "nirfRanking": 77,
+    "fees": 750000,
+    "placement": { "averagePackage": 620000, "highestPackage": 3900000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 58000, "obc": 64000, "sc": 20400, "st": 10200 },
+        "seats": { "general": 110, "obc": 73, "sc": 28, "st": 14 }
+      }
+    ]
+  },
+  {
+    "name": "Thakur College of Engineering and Technology",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 78,
+    "fees": 850000,
+    "placement": { "averagePackage": 700000, "highestPackage": 4500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 55000, "obc": 61000, "sc": 19500, "st": 9750 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      }
+    ]
+  },
+  {
+    "name": "K.J. Somaiya College of Engineering",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 79,
+    "fees": 900000,
+    "placement": { "averagePackage": 750000, "highestPackage": 4900000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 52000, "obc": 58000, "sc": 18500, "st": 9250 },
+        "seats": { "general": 110, "obc": 73, "sc": 28, "st": 14 }
+      }
+    ]
+  },
+  {
+    "name": "DJ Sanghvi College of Engineering",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 80,
+    "fees": 880000,
+    "placement": { "averagePackage": 730000, "highestPackage": 4700000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 54000, "obc": 60000, "sc": 19200, "st": 9600 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "Vidyalankar Institute of Technology",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 81,
+    "fees": 750000,
+    "placement": { "averagePackage": 650000, "highestPackage": 4200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 56000, "obc": 62000, "sc": 19800, "st": 9900 },
+        "seats": { "general": 95, "obc": 63, "sc": 24, "st": 12 }
+      }
+    ]
+  },
+  {
+    "name": "Cummins College of Engineering for Women",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 82,
+    "fees": 800000,
+    "placement": { "averagePackage": 700000, "highestPackage": 4600000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 53000, "obc": 59000, "sc": 18800, "st": 9400 },
+        "seats": { "general": 90, "obc": 60, "sc": 22, "st": 11 }
+      }
+    ]
+  },
+  {
+    "name": "Vishwakarma Institute of Technology",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 83,
+    "fees": 850000,
+    "placement": { "averagePackage": 720000, "highestPackage": 4800000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 51000, "obc": 57000, "sc": 18250, "st": 9125 },
+        "seats": { "general": 110, "obc": 73, "sc": 28, "st": 14 }
+      }
+    ]
+  },
+  {
+    "name": "MIT World Peace University",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 84,
+    "fees": 900000,
+    "placement": { "averagePackage": 740000, "highestPackage": 4700000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 50000, "obc": 56000, "sc": 18000, "st": 9000 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      }
+    ]
+  },
+  {
+    "name": "PUNE Institute of Computer Technology",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 85,
+    "fees": 800000,
+    "placement": { "averagePackage": 710000, "highestPackage": 4600000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 52000, "obc": 58000, "sc": 18500, "st": 9250 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "Netaji Subhas University of Technology",
+    "state": "Delhi",
+    "type": "Government",
+    "nirfRanking": 86,
+    "fees": 90000,
+    "placement": { "averagePackage": 600000, "highestPackage": 3500000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 20000, "obc": 26000, "sc": 7000, "st": 3500 },
+        "seats": { "general": 50, "obc": 33, "sc": 13, "st": 7 }
+      }
+    ]
+  },
+  {
+    "name": "Dr. D.Y. Patil Institute of Technology",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 87,
+    "fees": 850000,
+    "placement": { "averagePackage": 680000, "highestPackage": 4300000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 55000, "obc": 61000, "sc": 19500, "st": 9750 },
+        "seats": { "general": 115, "obc": 76, "sc": 29, "st": 15 }
+      }
+    ]
+  },
+  {
+    "name": "Tolani Maritime Institute",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 88,
+    "fees": 750000,
+    "placement": { "averagePackage": 600000, "highestPackage": 3800000 },
+    "branches": [
+      {
+        "name": "Marine Engineering",
+        "cutoff": { "general": 60000, "obc": 66000, "sc": 21000, "st": 10500 },
+        "seats": { "general": 50, "obc": 33, "sc": 13, "st": 7 }
+      }
+    ]
+  },
+  {
+    "name": "DIT University",
+    "state": "Uttarakhand",
+    "type": "Private",
+    "nirfRanking": 89,
+    "fees": 800000,
+    "placement": { "averagePackage": 650000, "highestPackage": 4100000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 57000, "obc": 63000, "sc": 20100, "st": 10050 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      }
+    ]
+  },
+  {
+    "name": "Indore Institute of Science and Engineering",
+    "state": "Madhya Pradesh",
+    "type": "Private",
+    "nirfRanking": 90,
+    "fees": 700000,
+    "placement": { "averagePackage": 580000, "highestPackage": 3700000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 60000, "obc": 66000, "sc": 21000, "st": 10500 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "ICFAI University",
+    "state": "Telangana",
+    "type": "Private",
+    "nirfRanking": 91,
+    "fees": 900000,
+    "placement": { "averagePackage": 700000, "highestPackage": 4400000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 56000, "obc": 62000, "sc": 19800, "st": 9900 },
+        "seats": { "general": 120, "obc": 80, "sc": 30, "st": 15 }
+      }
+    ]
+  },
+  {
+    "name": "Marathwada Mitra Mandal's College of Engineering",
+    "state": "Maharashtra",
+    "type": "Private",
+    "nirfRanking": 92,
+    "fees": 700000,
+    "placement": { "averagePackage": 600000, "highestPackage": 3800000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 58000, "obc": 64000, "sc": 20400, "st": 10200 },
+        "seats": { "general": 110, "obc": 73, "sc": 28, "st": 14 }
+      }
+    ]
+  },
+  {
+    "name": "Dr. Harisingh Gour University",
+    "state": "Madhya Pradesh",
+    "type": "Government",
+    "nirfRanking": 93,
+    "fees": 65000,
+    "placement": { "averagePackage": 500000, "highestPackage": 3200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 30000, "obc": 38000, "sc": 11000, "st": 5500 },
+        "seats": { "general": 60, "obc": 40, "sc": 15, "st": 8 }
+      }
+    ]
+  },
+  {
+    "name": "Marudhar Engineering College",
+    "state": "Rajasthan",
+    "type": "Private",
+    "nirfRanking": 94,
+    "fees": 650000,
+    "placement": { "averagePackage": 550000, "highestPackage": 3600000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 60000, "obc": 66000, "sc": 21000, "st": 10500 },
+        "seats": { "general": 100, "obc": 65, "sc": 25, "st": 13 }
+      }
+    ]
+  },
+  {
+    "name": "Rajasthan Technical University",
+    "state": "Rajasthan",
+    "type": "Government",
+    "nirfRanking": 95,
+    "fees": 60000,
+    "placement": { "averagePackage": 450000, "highestPackage": 2900000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 35000, "obc": 43000, "sc": 12500, "st": 6250 },
+        "seats": { "general": 80, "obc": 53, "sc": 20, "st": 10 }
+      }
+    ]
+  },
+  {
+    "name": "Maharaja Sayajirao University of Baroda",
+    "state": "Gujarat",
+    "type": "Government",
+    "nirfRanking": 96,
+    "fees": 70000,
+    "placement": { "averagePackage": 520000, "highestPackage": 3300000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 32000, "obc": 40000, "sc": 11500, "st": 5750 },
+        "seats": { "general": 70, "obc": 46, "sc": 18, "st": 9 }
+      }
+    ]
+  },
+  {
+    "name": "Maulana Abul Kalam Azad University of Technology",
+    "state": "West Bengal",
+    "type": "Government",
+    "nirfRanking": 97,
+    "fees": 65000,
+    "placement": { "averagePackage": 480000, "highestPackage": 3100000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 35000, "obc": 43000, "sc": 12500, "st": 6250 },
+        "seats": { "general": 90, "obc": 60, "sc": 22, "st": 11 }
+      }
+    ]
+  },
+  {
+    "name": "Bundelkhand Institute of Engineering and Technology",
+    "state": "Madhya Pradesh",
+    "type": "Private",
+    "nirfRanking": 98,
+    "fees": 650000,
+    "placement": { "averagePackage": 520000, "highestPackage": 3400000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 61000, "obc": 67000, "sc": 21400, "st": 10700 },
+        "seats": { "general": 95, "obc": 63, "sc": 24, "st": 12 }
+      }
+    ]
+  },
+  {
+    "name": "Galgotias University",
+    "state": "Uttar Pradesh",
+    "type": "Private",
+    "nirfRanking": 99,
+    "fees": 900000,
+    "placement": { "averagePackage": 680000, "highestPackage": 4200000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 58000, "obc": 64000, "sc": 20400, "st": 10200 },
+        "seats": { "general": 150, "obc": 100, "sc": 40, "st": 20 }
+      }
+    ]
+  },
+  {
+    "name": "Malla Reddy University",
+    "state": "Telangana",
+    "type": "Private",
+    "nirfRanking": 100,
+    "fees": 800000,
+    "placement": { "averagePackage": 620000, "highestPackage": 3900000 },
+    "branches": [
+      {
+        "name": "Computer Science and Engineering",
+        "cutoff": { "general": 59000, "obc": 65000, "sc": 20700, "st": 10350 },
+        "seats": { "general": 130, "obc": 86, "sc": 33, "st": 17 }
+      }
+    ]
+  }
+]
