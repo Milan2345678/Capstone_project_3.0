@@ -6,11 +6,11 @@ const {
   getProfile,
   updateProfile,
 } = require("../controllers/userController");
-const auth = require("../middleware/auth");
+const { authenticateUser } = require("../middleware/auth");
 
 router.post("/register", register);
 router.post("/login", login);
-router.get("/profile", auth, getProfile);
-router.put("/profile", auth, updateProfile);
+router.get("/profile", authenticateUser, getProfile);
+router.put("/profile", authenticateUser, updateProfile);
 
 module.exports = router;

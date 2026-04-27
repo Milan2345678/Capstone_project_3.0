@@ -2,7 +2,7 @@
  * ============================================================================
  * COMPLETE COLLEGE RECOMMENDATION ENGINE - PURE NODE.JS
  * ============================================================================
- * 
+ *
  * No Python dependencies - All ML algorithms implemented in JavaScript
  * Features: Content-Based Filtering, Dynamic Scoring, Preference Weighting
  * ============================================================================
@@ -24,23 +24,23 @@ const BRANCH_PRESTIGE = {
   "Mechanical Engineering": 70,
   "Civil Engineering": 60,
   "Chemical Engineering": 65,
-  "Biotechnology": 55,
-  "default": 50,
+  Biotechnology: 55,
+  default: 50,
 };
 
 const COLLEGE_TYPE_BASE = {
-  "IIT": 100,
-  "NIT": 85,
-  "IIIT": 75,
-  "Government": 65,
-  "Private": 45,
-  "default": 40,
+  IIT: 100,
+  NIT: 85,
+  IIIT: 75,
+  Government: 65,
+  Private: 45,
+  default: 40,
 };
 
 class RecommendationEngine {
   static async getRecommendations(req, res) {
     const startTime = Date.now();
-    
+
     try {
       const {
         rank,
@@ -69,11 +69,16 @@ class RecommendationEngine {
         });
       }
 
-      const weight = Math.max(0, Math.min(100, parseInt(preferenceWeight) || 50));
+      const weight = Math.max(
+        0,
+        Math.min(100, parseInt(preferenceWeight) || 50),
+      );
       const courseWeight = weight / 100;
       const collegeWeight = 1 - courseWeight;
 
-      console.log(`[Recommendation] Rank: ${rankNum}, Category: ${category}, Weight: ${weight}%`);
+      console.log(
+        `[Recommendation] Rank: ${rankNum}, Category: ${category}, Weight: ${weight}%`,
+      );
 
       const query = {};
       if (state && state !== "All locations") {
@@ -81,7 +86,7 @@ class RecommendationEngine {
       }
 
       const colleges = await College.find(query).lean();
-      
+
       if (!colleges || colleges.length === 0) {
         return res.json({
           success: true,
@@ -100,28 +105,37 @@ class RecommendationEngine {
         if (budget && college.fees > budget) continue;
 
         const branches = college.branches || [];
-        
+
         for (const branch of branches) {
-          if (preferredBranches.length > 0 && !preferredBranches.includes(branch.name)) {
+          if (
+            preferredBranches.length > 0 &&
+            !preferredBranches.includes(branch.name)
+          ) {
             continue;
           }
 
           const cutoff = branch.cutoff?.[category.toLowerCase()];
           if (!cutoff) continue;
 
-          const admissionProb = this.calculateAdmissionProbability(rankNum, cutoff);
+          const admissionProb = this.calculateAdmissionProbability(
+            rankNum,
+            cutoff,
+          );
           if (admissionProb < 0.3) continue;
 
           const categoryTag = this.getCategoryTag(admissionProb);
 
           const branchScore = this.getBranchPrestigeScore(branch.name);
-          const collegeScore = this.getCollegePrestigeScore(college.type, college.nirfRanking);
+          const collegeScore = this.getCollegePrestigeScore(
+            college.type,
+            college.nirfRanking,
+          );
           const placementScore = this.getPlacementScore(college.placement);
           const probabilityScore = Math.min(admissionProb * 100, 100);
-          
+
           const similarity = this.calculateSimilarity(
             { rank: rankNum, budget, preferredBranches, category },
-            { college, branch }
+            { college, branch },
           );
 
           const finalScore = this.calculateFinalScore({
@@ -170,7 +184,9 @@ class RecommendationEngine {
         }
       }
 
-      console.log(`[Recommendation] Generated ${results.length} recommendations`);
+      console.log(
+        `[Recommendation] Generated ${results.length} recommendations`,
+      );
 
       const sortedResults = this.sortRecommendations(results);
       sortedResults.forEach((result, index) => {
@@ -188,11 +204,11 @@ class RecommendationEngine {
           preferredBranches,
           preferenceWeight: weight,
           totalResults: results.length,
-        }).catch(err => console.error("Failed to save history:", err));
+        }).catch((err) => console.error("Failed to save history:", err));
       }
 
       const responseTime = Date.now() - startTime;
-      
+
       return res.json({
         success: true,
         summary: {
@@ -217,7 +233,6 @@ class RecommendationEngine {
         },
         allFlat: sortedResults.slice(0, maxResults),
       });
-
     } catch (error) {
       console.error("[Recommendation Error]:", error);
       return res.status(500).json({
@@ -236,31 +251,31 @@ class RecommendationEngine {
     const baseScore = COLLEGE_TYPE_BASE[type] || COLLEGE_TYPE_BASE.default;
     let nirfBoost = 0;
     if (nirfRanking && !isNaN(nirfRanking)) {
-      nirfBoost = Math.max(0, 30 - (nirfRanking / 5));
+      nirfBoost = Math.max(0, 30 - nirfRanking / 5);
     }
     return Math.min(baseScore + nirfBoost, 100);
   }
 
   static getPlacementScore(placement) {
     if (!placement) return 0;
-    
+
     const avgPackage = placement.averagePackage || 0;
     const highestPackage = placement.highestPackage || avgPackage;
-    
+
     const packageScore = Math.min((avgPackage / 2000000) * 100, 100);
     const highestScore = Math.min((highestPackage / 3000000) * 100, 100);
-    
-    return (packageScore * 0.6) + (highestScore * 0.4);
+
+    return packageScore * 0.6 + highestScore * 0.4;
   }
 
   static calculateAdmissionProbability(rank, cutoff) {
     const rawProb = cutoff / rank;
-    
+
     if (rawProb >= 1.5) return 0.99;
     if (rawProb >= 1.1) return 0.85;
-    if (rawProb >= 0.9) return 0.70;
-    if (rawProb >= 0.6) return 0.50;
-    if (rawProb >= 0.4) return 0.30;
+    if (rawProb >= 0.9) return 0.7;
+    if (rawProb >= 0.6) return 0.5;
+    if (rawProb >= 0.4) return 0.3;
     return rawProb * 0.5;
   }
 
@@ -272,7 +287,7 @@ class RecommendationEngine {
 
   static getAdmissionMessage(category, probability) {
     const percent = (probability * 100).toFixed(0);
-    
+
     if (category === "safe") {
       return `Excellent chance of admission (${percent}%)`;
     } else if (category === "target") {
@@ -285,21 +300,21 @@ class RecommendationEngine {
   static calculateSimilarity(studentProfile, collegeData) {
     const { rank, budget, preferredBranches, category } = studentProfile;
     const { college, branch } = collegeData;
-    
+
     let similarityScore = 0;
     let totalWeight = 0;
-    
+
     if (preferredBranches.includes(branch.name)) {
       similarityScore += 0.4;
     } else {
       const branchFamily = this.getBranchFamily(branch.name);
       const hasRelatedBranch = preferredBranches.some(
-        b => this.getBranchFamily(b) === branchFamily
+        (b) => this.getBranchFamily(b) === branchFamily,
       );
       if (hasRelatedBranch) similarityScore += 0.2;
     }
     totalWeight += 0.4;
-    
+
     if (budget) {
       const budgetFit = 1 - Math.abs(college.fees - budget) / budget;
       similarityScore += Math.max(0, budgetFit) * 0.25;
@@ -307,33 +322,47 @@ class RecommendationEngine {
       similarityScore += 0.25;
     }
     totalWeight += 0.25;
-    
-    const collegeScore = this.getCollegePrestigeScore(college.type, college.nirfRanking);
-    const rankScore = Math.max(0, 100 - (rank / 5000));
+
+    const collegeScore = this.getCollegePrestigeScore(
+      college.type,
+      college.nirfRanking,
+    );
+    const rankScore = Math.max(0, 100 - rank / 5000);
     const prestigeFit = 1 - Math.abs(collegeScore - rankScore) / 100;
     similarityScore += prestigeFit * 0.2;
     totalWeight += 0.2;
-    
+
     const expectedPlacement = this.getExpectedPlacementForRank(rank);
     const actualPlacement = this.getPlacementScore(college.placement);
-    const placementFit = 1 - Math.abs(expectedPlacement - actualPlacement) / 100;
+    const placementFit =
+      1 - Math.abs(expectedPlacement - actualPlacement) / 100;
     similarityScore += Math.max(0, placementFit) * 0.15;
     totalWeight += 0.15;
-    
+
     return similarityScore / totalWeight;
   }
 
   static getBranchFamily(branchName) {
-    if (branchName.includes("Computer") || branchName.includes("Information Technology") || branchName.includes("AI")) {
+    if (
+      branchName.includes("Computer") ||
+      branchName.includes("Information Technology") ||
+      branchName.includes("AI")
+    ) {
       return "CS";
     }
-    if (branchName.includes("Electronics") || branchName.includes("Communication")) {
+    if (
+      branchName.includes("Electronics") ||
+      branchName.includes("Communication")
+    ) {
       return "ECE";
     }
     if (branchName.includes("Electrical")) {
       return "EE";
     }
-    if (branchName.includes("Mechanical") || branchName.includes("Automobile")) {
+    if (
+      branchName.includes("Mechanical") ||
+      branchName.includes("Automobile")
+    ) {
       return "ME";
     }
     if (branchName.includes("Civil")) {
@@ -365,29 +394,31 @@ class RecommendationEngine {
   }) {
     return (
       branchScore * courseWeight * 0.35 +
-      collegeScore * collegeWeight * 0.30 +
-      placementScore * 0.20 +
-      probabilityScore * 0.10 +
+      collegeScore * collegeWeight * 0.3 +
+      placementScore * 0.2 +
+      probabilityScore * 0.1 +
       similarity * 100 * 0.05
     );
   }
 
   static sortRecommendations(results) {
     const categoryOrder = { safe: 3, target: 2, dream: 1 };
-    
+
     return results.sort((a, b) => {
-      const catDiff = categoryOrder[b.admission.category] - categoryOrder[a.admission.category];
+      const catDiff =
+        categoryOrder[b.admission.category] -
+        categoryOrder[a.admission.category];
       if (catDiff !== 0) return catDiff;
-      
+
       return parseFloat(b.scores.final) - parseFloat(a.scores.final);
     });
   }
 
   static categorizeResults(sortedResults) {
     return {
-      safe: sortedResults.filter(r => r.admission.category === "safe"),
-      target: sortedResults.filter(r => r.admission.category === "target"),
-      dream: sortedResults.filter(r => r.admission.category === "dream"),
+      safe: sortedResults.filter((r) => r.admission.category === "safe"),
+      target: sortedResults.filter((r) => r.admission.category === "target"),
+      dream: sortedResults.filter((r) => r.admission.category === "dream"),
     };
   }
 
@@ -403,7 +434,7 @@ class RecommendationEngine {
             },
           },
         },
-        { new: true }
+        { new: true },
       );
     } catch (error) {
       console.error("Failed to save search history:", error);
@@ -411,7 +442,8 @@ class RecommendationEngine {
   }
 }
 
-exports.getRecommendations = (req, res) => RecommendationEngine.getRecommendations(req, res);
+exports.getRecommendations = (req, res) =>
+  RecommendationEngine.getRecommendations(req, res);
 
 exports.getColleges = async (req, res) => {
   try {
@@ -465,7 +497,8 @@ exports.chatWithAI = async (req, res) => {
       messages: [
         {
           role: "system",
-          content: "You are a JEE college counselor. Give smart and short advice.",
+          content:
+            "You are a JEE college counselor. Give smart and short advice.",
         },
         { role: "user", content: message },
       ],
