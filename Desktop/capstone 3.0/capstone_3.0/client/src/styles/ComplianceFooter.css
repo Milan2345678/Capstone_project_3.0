@@ -1,0 +1,335 @@
+/* ============================================================================
+   COMPLIANCE FOOTER STYLING
+   Dark theme footer with DPDP Act compliance and ethical AI guidelines
+   ============================================================================ */
+
+.compliance-footer {
+  color: #fff;
+  margin-top: 60px;
+  border-top: 4px solid #667eea;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.compliance-footer a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.compliance-footer a:hover {
+  color: #66bb6a;
+  text-decoration: underline;
+}
+
+/* Main Content Sections */
+.compliance-footer .MuiGrid-container {
+  margin-bottom: 24px;
+}
+
+.compliance-footer .section-box {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.compliance-footer .section-box:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Icon Styling */
+.compliance-footer .MuiSvgIcon-root {
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.compliance-footer .section-box:hover .MuiSvgIcon-root {
+  transform: scale(1.1);
+}
+
+/* Headings */
+.compliance-footer h6 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.compliance-footer p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.compliance-footer strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.compliance-footer ul {
+  margin-left: 24px;
+  color: #e0e0e0;
+}
+
+.compliance-footer li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Divider */
+.compliance-footer .MuiDivider-root {
+  border-color: #444 !important;
+  margin: 24px 0;
+}
+
+/* Detailed Sections */
+.compliance-footer .detail-section {
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.05),
+    rgba(118, 75, 162, 0.05)
+  );
+  border-left: 3px solid #667eea;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.compliance-footer .detail-section h6 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.compliance-footer .detail-section p,
+.compliance-footer .detail-section ul {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.compliance-footer .detail-section strong {
+  color: #fff;
+}
+
+/* Disclaimer Box */
+.compliance-footer .disclaimer-box {
+  background: linear-gradient(135deg, #ff9800 0.3, #f44336 0.3);
+  border: 1px solid #ff9800;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.compliance-footer .disclaimer-box strong {
+  color: #ffeb3b;
+}
+
+/* Bottom Links */
+.compliance-footer .footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #444;
+}
+
+.compliance-footer .footer-links a {
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.compliance-footer .footer-links a:hover {
+  color: #4caf50;
+  transform: translateY(-2px);
+}
+
+.compliance-footer .footer-links .separator {
+  color: #666;
+}
+
+/* Copyright */
+.compliance-footer .copyright {
+  text-align: center;
+  color: #999;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.compliance-footer .copyright strong {
+  color: #e0e0e0;
+}
+
+.compliance-footer .copyright a {
+  color: #4caf50;
+  font-size: 0.85rem;
+}
+
+/* Badges/Tags */
+.compliance-footer .badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.compliance-footer .badge.data-protection {
+  background: linear-gradient(135deg, #2196f3, #1976d2);
+}
+
+.compliance-footer .badge.ethical-ai {
+  background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .compliance-footer {
+    padding: 30px 16px;
+  }
+
+  .compliance-footer .detail-section {
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .compliance-footer .section-box {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .compliance-footer .footer-links {
+    gap: 8px;
+  }
+
+  .compliance-footer .footer-links a {
+    font-size: 0.8rem;
+    padding: 6px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .compliance-footer {
+    padding: 20px 12px;
+    margin-top: 40px;
+  }
+
+  .compliance-footer h6 {
+    font-size: 1rem;
+  }
+
+  .compliance-footer p,
+  .compliance-footer li {
+    font-size: 0.85rem;
+  }
+
+  .compliance-footer ul {
+    margin-left: 16px;
+  }
+
+  .compliance-footer .detail-section {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .compliance-footer .MuiGrid-container {
+    row-gap: 12px;
+  }
+
+  .compliance-footer .footer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .compliance-footer .footer-links .separator {
+    display: none;
+  }
+
+  .compliance-footer .copyright {
+    font-size: 0.75rem;
+  }
+
+  .compliance-footer .badge {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .compliance-footer {
+    background: white;
+    color: black;
+    border-top: 2px solid #000;
+  }
+
+  .compliance-footer a {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .compliance-footer .detail-section {
+    page-break-inside: avoid;
+    border: 1px solid #ccc;
+  }
+}
+
+/* Dark Mode / Accessibility */
+@media (prefers-color-scheme: dark) {
+  .compliance-footer {
+    background: #0a0a0a;
+    border-top-color: #667eea;
+  }
+
+  .compliance-footer p,
+  .compliance-footer li,
+  .compliance-footer .detail-section p,
+  .compliance-footer .detail-section ul {
+    color: #d0d0d0;
+  }
+}
+
+/* Animations */
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.compliance-footer {
+  animation: slideInFromBottom 0.6s ease-out;
+}
+
+.compliance-footer .detail-section {
+  animation: slideInFromBottom 0.5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.compliance-footer .detail-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.compliance-footer .detail-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.compliance-footer .detail-section:nth-child(3) {
+  animation-delay: 0.3s;
+}

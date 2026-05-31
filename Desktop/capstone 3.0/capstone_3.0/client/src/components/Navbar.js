@@ -1,34 +1,42 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
-import SchoolIcon from "@mui/icons-material/School";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
 
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <SchoolIcon sx={{ mr: 2 }} />
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          College Recommendation System
-        </Typography>
-        <Box>
-          <Button color="inherit" component={Link} to="/">
-            Home
-          </Button>
-          <Button color="inherit" component={Link} to="/recommendations">
-            Get Recommendations
-          </Button>
-          <Button color="inherit" component={Link} to="/chat">
-            AI Chat
-          </Button>
-          <Button color="inherit" component={Link} to="/profile">
-            Profile
-          </Button>
-        </Box>
-      </Toolbar>
-    </AppBar>
+    <nav className="navbar">
+      <Link to="/" className="navbar-brand">
+        <div className="navbar-logo">📚</div>
+        <span className="navbar-title">College Advisor</span>
+      </Link>
+
+      <div className="navbar-links">
+        <Link to="/" className={`navbar-link ${isActive("/") ? "active" : ""}`}>
+          Home
+        </Link>
+        <Link
+          to="/recommendations"
+          className={`navbar-link ${isActive("/recommendations") ? "active" : ""}`}
+        >
+          Recommendations
+        </Link>
+        <Link
+          to="/chat"
+          className={`navbar-link ${isActive("/chat") ? "active" : ""}`}
+        >
+          AI Chat
+        </Link>
+        <Link
+          to="/profile"
+          className={`navbar-link ${isActive("/profile") ? "active" : ""}`}
+        >
+          Profile
+        </Link>
+      </div>
+    </nav>
   );
 };
 

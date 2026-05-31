@@ -1,145 +1,93 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Button,
-  Grid,
-  Card,
-  CardContent,
-  CardActions,
-  Chip,
-} from "@mui/material";
 import { Link } from "react-router-dom";
-import TrendingUpIcon from "@mui/icons-material/TrendingUp";
-import ChatIcon from "@mui/icons-material/Chat";
-import SchoolIcon from "@mui/icons-material/School";
+import "../styles/Home.css";
 
 const Home = () => {
   const features = [
     {
+      icon: "📊",
       title: "Smart Recommendations",
       description:
         "Get personalized college recommendations based on your JEE rank, category, and preferences using advanced algorithms.",
-      icon: <TrendingUpIcon fontSize="large" color="primary" />,
       link: "/recommendations",
     },
     {
+      icon: "🤖",
       title: "AI-Powered Explanations",
       description:
         "Understand why a college is recommended with detailed AI-generated explanations and admission insights.",
-      icon: <ChatIcon fontSize="large" color="primary" />,
       link: "/chat",
     },
     {
+      icon: "📚",
       title: "Comprehensive Database",
       description:
         "Access information about NITs, IIITs, and other top engineering colleges with real cutoff data.",
-      icon: <SchoolIcon fontSize="large" color="primary" />,
       link: "/recommendations",
     },
   ];
 
   return (
-    <Box sx={{ textAlign: "center", py: 4 }}>
-      <Typography variant="h2" component="h1" gutterBottom color="primary">
-        AI-Based College Recommendation System
-      </Typography>
-      <Typography
-        variant="h5"
-        component="h2"
-        gutterBottom
-        color="text.secondary"
-      >
-        Make smarter JEE counseling decisions with data-driven recommendations
-      </Typography>
+    <div className="home-page">
+      <div className="home-container">
+        {/* Hero Section */}
+        <div className="hero-section">
+          <h1 className="hero-title">University & Course Finder</h1>
+          <p className="hero-subtitle">
+            Set your preferences below and we'll match you with the best options
+          </p>
 
-      <Box sx={{ my: 4 }}>
-        <Button
-          variant="contained"
-          size="large"
-          component={Link}
-          to="/recommendations"
-          sx={{ mr: 2, px: 4, py: 1.5 }}
-        >
-          Get Recommendations
-        </Button>
-        <Button
-          variant="outlined"
-          size="large"
-          component={Link}
-          to="/chat"
-          sx={{ px: 4, py: 1.5 }}
-        >
-          Ask AI Assistant
-        </Button>
-      </Box>
+          <div className="hero-buttons">
+            <Link to="/recommendations" className="btn-primary">
+              Get Recommendations
+            </Link>
+            <Link to="/chat" className="btn-secondary">
+              Ask AI Assistant
+            </Link>
+          </div>
+        </div>
 
-      <Box sx={{ my: 6 }}>
-        <Typography variant="h4" component="h3" gutterBottom>
-          How It Works
-        </Typography>
-        <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
-          Our system analyzes your JEE rank, category, and preferences to
-          provide personalized college recommendations categorized as Safe,
-          Target, or Dream options.
-        </Typography>
-      </Box>
+        {/* How It Works */}
+        <div className="how-it-works">
+          <h2 className="section-title">How It Works</h2>
+          <p className="section-subtitle">
+            Our system analyzes your JEE rank, category, and preferences to
+            provide personalized college recommendations categorized as Safe,
+            Target, or Dream options.
+          </p>
+        </div>
 
-      <Grid container spacing={4} sx={{ mt: 2 }}>
-        {features.map((feature, index) => (
-          <Grid item xs={12} md={4} key={index}>
-            <Card
-              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
-            >
-              <CardContent sx={{ flexGrow: 1, textAlign: "center" }}>
-                <Box sx={{ mb: 2 }}>{feature.icon}</Box>
-                <Typography variant="h5" component="h3" gutterBottom>
-                  {feature.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {feature.description}
-                </Typography>
-              </CardContent>
-              <CardActions sx={{ justifyContent: "center" }}>
-                <Button size="small" component={Link} to={feature.link}>
-                  Learn More
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+        {/* Features Grid */}
+        <div className="features-grid">
+          {features.map((feature, index) => (
+            <div key={index} className="feature-card">
+              <div className="feature-icon">{feature.icon}</div>
+              <h3 className="feature-title">{feature.title}</h3>
+              <p className="feature-description">{feature.description}</p>
+              <Link to={feature.link} className="feature-link">
+                Learn More →
+              </Link>
+            </div>
+          ))}
+        </div>
 
-      <Box sx={{ mt: 6, p: 3, bgcolor: "grey.100", borderRadius: 2 }}>
-        <Typography variant="h6" gutterBottom>
-          Categories Explained
-        </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 2,
-            flexWrap: "wrap",
-          }}
-        >
-          <Chip
-            label="Safe: High chance of admission"
-            color="success"
-            variant="outlined"
-          />
-          <Chip
-            label="Target: Moderate chance of admission"
-            color="warning"
-            variant="outlined"
-          />
-          <Chip
-            label="Dream: Low chance but worth applying"
-            color="error"
-            variant="outlined"
-          />
-        </Box>
-      </Box>
-    </Box>
+        {/* Categories Explained */}
+        <div className="categories-section">
+          <h3 className="categories-title">Categories Explained</h3>
+          <div className="categories-grid">
+            <div className="category-chip chip-safe">
+              <strong>Safe:</strong> High chance of admission
+            </div>
+            <div className="category-chip chip-target">
+              <strong>Target:</strong> Moderate chance of admission
+            </div>
+            <div className="category-chip chip-dream">
+              <strong>Dream:</strong> Low chance but worth applying
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

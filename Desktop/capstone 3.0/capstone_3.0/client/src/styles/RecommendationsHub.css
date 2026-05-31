@@ -1,0 +1,329 @@
+/* ============================================================================
+   RECOMMENDATIONS HUB STYLING
+   Main recommendations container with Safe/Target/Dream categorization
+   ============================================================================ */
+
+.recommendations-hub {
+  padding: 24px;
+  background: linear-gradient(to bottom, #f5f7fa, #ffffff);
+  border-radius: 12px;
+}
+
+.recommendations-hub h4 {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Profile Summary Card */
+.recommendations-hub .MuiPaper-root {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.recommendations-hub .profile-summary {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  border-left: 4px solid #667eea;
+}
+
+/* Category Cards */
+.category-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.category-card:hover::before {
+  opacity: 1;
+}
+
+.category-card.safe-category {
+  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+  border: 2px solid #28a745;
+}
+
+.category-card.safe-category:hover {
+  box-shadow: 0 8px 24px rgba(40, 167, 69, 0.25);
+  transform: translateY(-4px);
+}
+
+.category-card.target-category {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+  border: 2px solid #ffc107;
+}
+
+.category-card.target-category:hover {
+  box-shadow: 0 8px 24px rgba(255, 193, 7, 0.25);
+  transform: translateY(-4px);
+}
+
+.category-card.dream-category {
+  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+  border: 2px solid #dc3545;
+}
+
+.category-card.dream-category:hover {
+  box-shadow: 0 8px 24px rgba(220, 53, 69, 0.25);
+  transform: translateY(-4px);
+}
+
+.category-card .MuiCardContent-root {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.category-card h6 {
+  font-size: 1.8rem;
+}
+
+.category-card strong {
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: block;
+}
+
+.category-card .category-label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Tabs */
+.recommendations-hub .MuiTabs-root {
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.recommendations-hub .MuiTab-root {
+  font-weight: 600;
+  text-transform: none;
+  padding: 16px 24px;
+  min-width: auto;
+  transition: all 0.3s ease;
+}
+
+.recommendations-hub .MuiTab-root.Mui-selected {
+  color: #667eea;
+  border-bottom: 3px solid #667eea;
+}
+
+.recommendations-hub .MuiTab-root:hover {
+  color: #667eea;
+  background-color: rgba(102, 126, 234, 0.05);
+}
+
+.tab-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+/* Content Section */
+.recommendations-hub .content-section {
+  margin-top: 24px;
+}
+
+.recommendations-hub .content-section h5 {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.recommendations-hub .content-section > p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Cards Grid */
+.recommendations-hub .MuiGrid-container {
+  row-gap: 24px;
+}
+
+/* Empty State */
+.recommendations-hub .MuiAlert-info {
+  background: linear-gradient(135deg, #cfe9f3 0%, #b3dce8 100%);
+  border: 1px solid #0284c7;
+  color: #0c5460;
+  border-radius: 8px;
+}
+
+/* Counseling Tips */
+.counseling-tips {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-left: 4px solid #0284c7;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 32px;
+}
+
+.counseling-tips h6 {
+  color: #0284c7;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.counseling-tips p {
+  color: #0c4a6e;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.counseling-tips ul {
+  margin-left: 20px;
+}
+
+.counseling-tips li {
+  margin-bottom: 8px;
+  color: #0c4a6e;
+}
+
+.counseling-tips strong {
+  color: #0c5460;
+  font-weight: 700;
+}
+
+/* Statistics */
+.stats-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  flex: 0 0 auto;
+  background: white;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-width: 150px;
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #667eea;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.stat-item p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .recommendations-hub {
+    padding: 16px;
+  }
+
+  .recommendations-hub .MuiTab-root {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
+  .category-card .MuiCardContent-root {
+    padding: 16px;
+  }
+
+  .stats-container {
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    flex: 0 0 calc(50% - 8px);
+  }
+}
+
+@media (max-width: 600px) {
+  .recommendations-hub {
+    padding: 12px;
+  }
+
+  .recommendations-hub h4 {
+    font-size: 1.5rem;
+  }
+
+  .category-card .MuiCardContent-root {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .category-card h6 {
+    font-size: 1.2rem;
+  }
+
+  .recommendations-hub .MuiTab-root {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .tab-badge {
+    margin-left: 4px;
+    padding: 2px 8px;
+  }
+
+  .counseling-tips {
+    padding: 16px;
+  }
+
+  .stat-item {
+    flex: 0 0 100%;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recommendations-hub {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.category-card {
+  animation: fadeInUp 0.5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.category-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.category-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.category-card:nth-child(3) {
+  animation-delay: 0.3s;
+}

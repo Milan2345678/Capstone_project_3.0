@@ -15,7 +15,6 @@ import {
   MenuItem,
   Chip,
 } from "@mui/material";
-import axios from "axios";
 
 const Profile = () => {
   const [profile, setProfile] = useState({

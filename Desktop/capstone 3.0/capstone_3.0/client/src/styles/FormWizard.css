@@ -1,0 +1,157 @@
+/* ============================================================================
+   FORM WIZARD STYLING
+   Multi-step form with stepper, inputs, and algorithm balancing slider
+   ============================================================================ */
+
+.form-wizard-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wizard-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700 !important;
+}
+
+.wizard-stepper {
+  margin: 24px 0 !important;
+  padding: 0 !important;
+}
+
+.wizard-content {
+  min-height: 400px;
+  padding: 20px 0;
+}
+
+.step-container {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Branch Chips */
+.form-wizard-card .MuiChip-root {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+}
+
+.form-wizard-card .MuiChip-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Slider Styling */
+.form-wizard-card .MuiSlider-root {
+  margin-top: 16px !important;
+}
+
+.form-wizard-card .MuiSlider-mark {
+  background-color: #667eea !important;
+}
+
+.form-wizard-card .MuiSlider-markLabel {
+  color: #666 !important;
+  font-size: 0.75rem !important;
+}
+
+.form-wizard-card .MuiSlider-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 0 0 8px rgba(102, 126, 234, 0.1);
+}
+
+.form-wizard-card .MuiSlider-track {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 6px !important;
+}
+
+/* Algorithm Balance Box */
+.form-wizard-card .MuiAlert-root {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  border: 1px solid #0284c7;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.form-wizard-card .MuiAlert-root .MuiSvgIcon-root {
+  color: #0284c7;
+}
+
+/* Button Styling */
+.form-wizard-card .MuiButton-contained {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.form-wizard-card .MuiButton-contained:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.form-wizard-card .MuiButton-outlined {
+  border-color: #667eea;
+  color: #667eea;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.form-wizard-card .MuiButton-outlined:hover {
+  background-color: rgba(102, 126, 234, 0.08);
+}
+
+/* Input Styling */
+.form-wizard-card .MuiTextField-root,
+.form-wizard-card .MuiFormControl-root {
+  margin-bottom: 12px;
+}
+
+.form-wizard-card .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.form-wizard-card
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #667eea;
+}
+
+.form-wizard-card
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #667eea;
+  border-width: 2px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-wizard-card {
+    margin: 16px;
+  }
+
+  .step-container {
+    padding: 0 16px;
+  }
+
+  .form-wizard-card .MuiChip-root {
+    margin-right: 4px;
+  }
+}
